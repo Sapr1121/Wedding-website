@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelicesXSiempre</title>
+    <link rel="icon" href="/Img/logoFelicesxSiempre.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <form action="/login" method="POST"  class="login-form" >
+            <h6>FelicesXSiempre</h6>
+            <h1>Inicio de sesión</h1>
+            <div class="username">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="username">
+                <input type="password" name="contrasena" placeholder="Contraseña">
+            </div>
+            
+            <div class="recuperar"><a href="#" class="recuperar-link">Olvido su contraseña?</a></div>
+            
+            <button type="submit" class="btn">Iniciar sesión</button>
+            <div class="registrarse">
+                <p>No tienes cuenta? <a href="#" class="registrarse-link">Registrarse</a></p>
+            </div>
+        </form>
+        <div class="nuevousuario">
+            <form action="/registro" method="POST" class="register-form">
+                <h6>FelicesXSiempre</h6>
+                <h1>Registrarse</h1>
+
+                <div class="username">
+                    <input type="text" name="nombreEsposo" placeholder="Nombre del Esposo">
+                </div>
+
+                <div class="username">
+                    <input type="text" name="nombreEsposa" placeholder="Nombre de la Esposa">
+                </div>
+
+                <div class="username">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="username">
+                    <input type="password" name="contrasena" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <div class="registrarse">
+                    <p>Ya recordaste tu contrasena? <a href="#" class="login-link">Inicio Sesion</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="restablecer">
+            <form  action="/restablecer-contrasena" method="POST" class="rest-contra">
+                <h6>FelicesXSiempre</h6>
+                <h1>Restablecer Contraseña</h1>
+                <div class="username">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <button type="submit" class="btn">Restablecer</button>
+                <div class="registrarse">
+                    <p>Ya tienes cuenta? <a href="#" class="login-link">Inicio Sesion</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

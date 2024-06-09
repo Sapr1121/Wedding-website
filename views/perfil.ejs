@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="icon" href="/Img/logoFelicesxSiempre.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Estilos/style-perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <header>
+            <div class="close-btn">
+                <i class="fas fa-times">
+                    
+                </i>
+            </div>
+            <img src="Img/logoFelicesxSiempre.png" alt="">
+            <h1>FelicesXSiempre</h1>
+        </header>
+        <div class="menu">
+            <div class="item" data-target="perfil"><a><i class="fas fa-user"></i>Perfil</a></div>
+            
+            <div class="item" data-target="contrasena"><a><i class="fas fa-th"></i>Gestion de Contrasena</a></div>
+            <div class="item" data-target="configuraciones"><a><i class="fas fa-cog"></i>Mas</a></div>
+            <div class="item" data-target="info"><a><i class="fas fa-info-circle"></i>Info</a></div>
+        </div>
+        
+
+    </div>
+    <div class="main-content">
+        <!-- Perfil -->
+        <div id="perfil" class="contenido-div" style="display:block ;">
+            
+
+            <div>
+                <h2>Información del Usuario</h2>
+                <div class="datosPerfil">
+                    <p><strong>Nombre del Esposo:</strong> <span id="nombreEsposo"></span></p>
+                    <p><strong>Nombre de la Esposa:</strong> <span id="nombreEsposa"></span></p>
+                    <p><strong>Email:</strong> <span id="userEmail"></span></p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <!-- Contraseña -->
+        <div id="contrasena" class="contenido-div" style="display:none;">
+            <h1>Contraseña</h1>
+            <form action="/RestContra" method="POST" class="register-form">
+                <div class="form-group">
+                    <label for="old-password">Contraseña Antigua:</label>
+                    <input type="password" id="old-password" name="old-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Nueva Contraseña:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="btn">Restablecer Contraseña</button>
+            </form>
+        </div>
+
+        <!-- Mas -->
+        <div id="configuraciones" class="contenido-div" style="display:none;">
+            <h1>Mas </h1>
+            <br>
+            <br>
+            <h3>Presiona el siguiente boton para cerrar sesion</h3>
+            <form id="cerrarSesionForm" action="/cerrar-sesion" method="GET">
+                <button type="submit" class="btn-2">Cerrar Sesión</button>
+            </form>
+            <br>
+            <br>
+            <h3>Si presionas el siguiente boton se borrar la cuenta sin posibilidad de Recuperarla</h3>
+            <form id="eliminarCuentaForm" action="/eliminar-cuenta" method="POST">
+                <button type="submit" class="btn-2">Eliminar Cuenta</button>
+            </form>
+            
+        </div>
+
+        <!-- Información -->
+        <div id="info" class="contenido-div" style="display:none;">
+            <h1>Sin informacion por el momento</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Datos del perfil del usuario-->
+    <script>
+        // Recuperar datos del usuario de la sesión
+        const nombreEsposo = '<%= user.nombreEsposo %>';
+        const nombreEsposa = '<%= user.nombreEsposa %>';
+        const userEmail = '<%= user.email %>';
+
+        // Insertar los datos del usuario en los elementos HTML
+        document.getElementById('nombreEsposo').innerText = nombreEsposo;
+        document.getElementById('nombreEsposa').innerText = nombreEsposa;
+        document.getElementById('userEmail').innerText = userEmail;
+    </script>
+
+
+<script>
+    $(document).ready(function(){
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", 'hidden');
+        });
+
+        $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", 'visible');
+        });
+
+    $('.item').click(function(){
+    var target = $(this).data('target');
+    $('.contenido-div').hide();
+    $('#' + target).show();
+    
+});
+
+    });
+
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,817 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>FelicesXSiempre</title>
+		<link rel="icon" href="/Img/logoFelicesxSiempre.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">XXX-XXX-XXX</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						
+						<h1 class="logo"><a>FelicesXSiempre</a></h1>
+					</div>
+
+					<div class="container-user">
+						<a href="/perfil">
+							<i class="fa-solid fa-user"></i>
+						</a>
+						
+						<i class="fa-solid fa-basket-shopping add-cart"></i>
+						<div class="cart">
+							<h2 class="cart-title">Tu carrito</h2>
+							<button class="close-cart">&#10006;</button>
+							<!-- Contenido del carrito -->
+							<div class="cart-content">
+								
+							</div>
+							<!-- Total -->
+							<div class="total">
+								<div class="total-title">Total: </div>
+								<div class="total-price">$0</div>
+							</div>
+							<button type="button" class="btn-buy">Pagar Ahora</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#">Inicio</a></li>
+						
+						<li><a href="Informacion de los productos/Mas//Mas.html">Más</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<section class="banner">
+			<div class="content-banner">
+				<p>COMBO</p>
+				<h2>FelicesXSiempre <br />Tu mejor dia</h2>
+				<a href="#">Comprar ahora</a>
+			</div>
+		</section>
+
+		<main class="main-content">
+			<section class="container container-features">
+				<div class="card-feature">
+					<i class="fa-solid fa-plane-up"></i>
+					<div class="feature-content">
+						<span>Luna de Miel</span>
+						<p>Escojes el 
+							lugar perfecto para ti</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-wallet"></i>
+					<div class="feature-content">
+						<span>Reembolso</span>
+						<p>Devolucion del 20%</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-gift"></i>
+					<div class="feature-content">
+						<span>Los mejores combos</span>
+						<p>Ofrece combos especiales</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-headset"></i>
+					<div class="feature-content">
+						<span>Servicio al cliente</span>
+						<p>LLámenos al XXX-XXX-XXX</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="container top-categories">
+				<h1 class="heading-1">Mejores Momentos</h1>
+				<div class="container-categories">
+					<div class="card-category category-moca">
+						
+						<span>FELICES</span>
+					</div>
+					<div class="card-category category-expreso">
+						
+						<span>X</span>
+					</div>
+					<div class="card-category category-capuchino">
+						
+						<span>SIEMPRE</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="container top-products">
+				<h1 class="heading-1">Mejores Productos</h1>
+
+				<div class="container-options">
+					<span class="active" onclick="switchContainer(1)">Destacados</span>
+					<span class="option" onclick="switchContainer(2)">Más recientes</span>
+					<span class="option" onclick="switchContainer(3)">Mejores Vendidos</span>
+				</div>
+
+				<div id="container-products-1" class="container-products" style="display: grid;">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/trajeH.webp" alt="" class="product-img"/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+							</div>
+							
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Traje Negro</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$650.000</p>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/trajeH2.webp"
+								alt=""
+								class="product-img"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Traje Rojo</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$550.000</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/vestidoM.webp"
+								alt=""
+								class="product-img"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3 class="product-title">Vestido de Novia</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$900.000</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/zapatosM.webp" alt="" class="product-img"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Zapatos de Novia</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$539.999</p>
+						</div>
+					</div>
+				</div>
+				<div id="container-products-2" class="container-products" style="display: none;">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/collarBodas.jpg" alt="" class="product-img"/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Collar</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$750.000</p>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/DiademaFloresBoda.jpg"
+								alt=""
+								class="product-img"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Diadema con Flores</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$49.999</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/CorbataBodas.jpg"
+								alt=""
+								class="product-img"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3 class="product-title">Corbata Morada</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$89.999</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/VeloNoviaBoda.jpg" alt="" class="product-img"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Velo para Novia</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$99.999</p>
+						</div>
+					</div>
+				</div>
+				<div id="container-products-3" class="container-products" style="display: none;">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/VeloMallaBoda.jpg" alt="" class="product-img"/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Velo para novia en Malla</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$79.999</p>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/TirantesNovioBodas.jpg"
+								alt=""
+								class="product-img"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Tirantes Novio</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$99.999</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/PanuelodeNovioBodas.jpg"
+								alt=""
+								class="product-img"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3 class="product-title">Pañuelo de Novio</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$20.000</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/CorbatinBodas.jpg" alt="" class="product-img"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Corbatin Novio</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$99.999</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<img
+					src="Imagenes/ImgBODA1.jpg"
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src="Imagenes/ImgBODA2.jpg"
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src="Imagenes/ImgBODA3.jpg"
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src="Imagenes/ImgBODA4.jpg"
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src="Imagenes/ImgBODA5.jpg"
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
+
+			<section class="container specials">
+				<h1 class="heading-1">Especiales</h1>
+
+				<div id="container-products-4" class="container-products-uni">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/AnillosBoda.jpg" alt="" class="product-img"/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Anillos</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$551.999</p>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="Imagenes/PendientesBoda.jpg"
+								alt=""
+								class="product-img"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Pendientes</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$249.999</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/florBoda.jpg" alt="" class="product-img"/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3 class="product-title">Flores</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$99.999</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="Imagenes/boutonniere.jpg" alt="" class="product-img"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3 class="product-title">Boutonnière</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping add-cart"></i>
+							</span>
+							<p class="price">$49.999</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="container blogs">
+				
+				<h1 class="heading-1">Mejores Viajes</h1>
+
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="Imagenes/Maldivas.jpeg" alt="Imagen Blog 1" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Islas Maldivas</h3>
+							<span>13 Mayo 2024</span>
+							<p>
+								
+								Las Maldivas son un destino de luna de miel excepcional gracias a sus escenarios paradisíacos, privacidad en islas exclusivas, actividades románticas como cenas en la playa y tratamientos de spa para parejas, emocionantes experiencias de buceo y snorkel, y atardeceres inolvidables.
+							</p>
+							
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="Imagenes/Paris.jpeg" alt="Imagen Blog 2" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Paris, Francia</h3>
+							<span>13 Mayo 2024</span>
+							<p>
+								París, Francia, es un destino de luna de miel icónico, conocido por su romance, historia y cultura. Ofrece una combinación única de encanto urbano y belleza arquitectónica, con emblemáticos lugares como la Torre Eiffel, el río Sena y la Catedral de Notre-Dame. 
+							</p>
+							
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="Imagenes/Santorini.webp" alt="Imagen Blog 3" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Santorini, Grecia</h3>
+							<span>13 Mayo 2024</span>
+							<p>
+								Santorini, Grecia, es un destino de luna de miel paradisíaco y pintoresco. Con sus impresionantes paisajes de acantilados blancos, aguas cristalinas del mar Egeo y atardeceres espectaculares, ofrece un ambiente romántico incomparable.	
+							</p>
+							
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+		
+		<footer class="footer">
+			
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: Sin direccion
+							</li>
+							<li>Teléfono: XXX-XXX-XXX</li>
+							<li>Fax: 555555555</li>
+							<li>EmaiL: FXSoport@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Información Delivery</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Historial de Pagos</a></li>
+							<li><a href="#">Reembolsos</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por Sebastian Perdomo &copy; 2024
+					</p>
+
+					<img src="Imagenes/payment.png" alt="Pagos">
+				</div>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+		<script src="cart.js"></script>
+		<script>
+			// JavaScript para el carrito de compras
+			const cartIcon = document.querySelector('.fa-basket-shopping');
+			const cart = document.querySelector('.cart');
+			const closeButton = document.querySelector('.close-cart');
+		
+			// Función para abrir/cerrar el carrito
+			function toggleCart() {
+				cart.classList.toggle('active'); // Alternar la clase 'active' para mostrar/ocultar el carrito
+			}
+		
+			// Evento de clic en el icono del carrito para abrir/cerrar
+			cartIcon.addEventListener('click', toggleCart);
+		
+			// Evento de clic en el botón de cierre para cerrar el carrito
+			closeButton.addEventListener('click', toggleCart);
+		</script>
+		
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function switchContainer(containerNum) {
+  // Ocultar todos los contenedores que no corresponden al número pasado como argumento
+  document.querySelectorAll('.container-products').forEach(container => {
+    if (container.id !== 'container-products-' + containerNum) {
+      container.style.display = 'none';
+    }
+  });
+
+  // Mostrar el contenedor correspondiente al número pasado como argumento
+  document.getElementById('container-products-' + containerNum).style.display = 'grid';
+
+  // Remover la clase 'active' de todos los botones
+  document.querySelectorAll('.option').forEach(option => {
+    option.classList.remove('active');
+  });
+  // Agregar la clase 'active' al botón seleccionado
+  document.querySelector('.option:nth-child(' + containerNum + ')').classList.add('active');
+}
+
+
+		  </script>
+	</body>
+</html>
